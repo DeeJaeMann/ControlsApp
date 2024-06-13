@@ -48,5 +48,21 @@ namespace ControlsApp
                 number.Text = radioButton.Content.ToString();
             }
         }
+
+        private void myListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (myListBox.SelectedItem is ListBoxItem listBoxItem)
+            {
+                number.Text = listBoxItem.Content.ToString();
+            }
+        }
+
+        private void readOnlyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (readOnlyComboBox.SelectedItem is ListBoxItem listBoxItem)
+            {
+                number.Text = listBoxItem.Content.ToString();
+            }
+        }
     }
 }

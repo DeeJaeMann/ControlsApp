@@ -25,14 +25,14 @@
         <RadioButton Content="4" HorizontalAlignment="Left" Margin="200,69,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         <RadioButton Content="5" HorizontalAlignment="Left" Margin="230,69,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         <RadioButton Content="6" HorizontalAlignment="Left" Margin="265,69,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <ListBox x:Name="myListBox" Grid.Row="1" Margin="10,10,10,10">
+        <ListBox x:Name="myListBox" Grid.Row="1" Margin="10,10,10,10" SelectionChanged="myListBox_SelectionChanged">
             <ListBoxItem Content="1"/>
             <ListBoxItem Content="2"/>
             <ListBoxItem Content="3"/>
             <ListBoxItem Content="4"/>
             <ListBoxItem Content="5"/>
         </ListBox>
-        <ComboBox x:Name="readOnlyComboBox" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="120" Margin="10,10,0,0">
+        <ComboBox x:Name="readOnlyComboBox" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="120" Margin="10,10,0,0" SelectionChanged="readOnlyComboBox_SelectionChanged">
             <ListBoxItem Content="1"/>
             <ListBoxItem Content="2"/>
             <ListBoxItem Content="3"/>
