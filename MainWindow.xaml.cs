@@ -40,5 +40,13 @@ namespace ControlsApp
         {
             number.Text = bigSlider.Value.ToString("000-000-0000");
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if (sender is RadioButton radioButton)
+            {
+                number.Text = radioButton.Content.ToString();
+            }
+        }
     }
 }
